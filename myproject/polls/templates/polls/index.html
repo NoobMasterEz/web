@@ -3,13 +3,18 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link rel="stylesheet" href="css/maps.css">
+
+
 <script
   src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBotgReCDsxrihpdzWDaGG-wKUL-_fPAWk"></script>
-  <script type="text/javascript" src="js/maps.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA2AwCTPeQRZkUYdq8AnyktnMgx70RpaOE"></script>
+  {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/maps.css' %}" />
+<script type="text/javascript" src="{% static  'polls/maps.js' %}"></script>
 </head>
 <body>
+
+
 <div ng-controller="MapCtrl">
     <div id="map"></div>
     <div id="repeat" ng-repeat="marker in markers | orderBy : 'title'">
