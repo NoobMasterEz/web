@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html ng-app="mapsApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Monitor</title>
+<link rel="stylesheet" href="css/maps.css">
+<link rel="shortcut icon" href="{{ url_for('static', filename='icon/favicon.ico') }}">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA2AwCTPeQRZkUYdq8AnyktnMgx70RpaOE"></script>
+  <script type = "text/javascript" src="{{ url_for('static', filename='js/maps.js') }}"></script>
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/maps.css')}}" />
+</head>
+<body>
+<div ng-controller="MapCtrl">
+    <div id="map"></div>
+   
+
+</div>
+</body>
+</html>
